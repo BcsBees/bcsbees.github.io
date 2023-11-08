@@ -1,0 +1,281 @@
+/* 
+CSS for our site 
+
+Ideas:
+	cursor picture cursor: url(http://www.bcsbees.com/images/beecursor1.gif), auto;
+*/
+
+a {
+	
+	}
+
+
+body {
+	margin: 0px;
+	background-color: #ffff66;	
+	line-height: 125%;
+	}
+
+footer {
+	clear:left;
+	}
+
+h1 {
+	color: #170B3B;
+	font-family: serif;
+	font-size: 64px;
+	font-weight: bold;
+	}
+h2 {
+	color: blue;
+	font-family: sans-serif;
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+	}
+h3 {
+	color: blue;
+	font-family: sans-serif;
+	font-size: medium;
+	font-weight: normal;
+	}
+
+nav {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0px; /*for display only*/
+	padding: 20px;
+	position:relative;
+	z-index:1;
+	float: left;
+	}
+ 
+p {
+	color: black;
+	font-weight: normal;
+	}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+/*
+ids can only be used once in a webpage.
+*/
+
+#header{
+	height:320px;
+	width:100%;
+	text-align:center;
+	padding : 5px;
+	display : flex;
+	justify-content : space-around;
+	overflow:auto;
+	}
+
+#header div {
+	width: 300px;  
+	text-align:center;
+	margin:0%;    
+	padding:20px;
+	}
+
+
+
+#logo{
+	float:left;
+	}
+
+#sitename{
+	width:300px;
+	float:left;
+	}
+
+#slide{
+	float:left;
+	}
+
+
+
+#nav{
+	clear:left;
+	}
+
+#mainbody{
+	position:relative;
+	width: 100%;
+	}
+
+#bodycontent {
+	border-bottom:0px;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	position:relative;
+	width: 80%;
+	height:auto;
+	float:left; /* make bodycontent div right of the nav bar*/
+	text-align: justify;
+	}
+
+
+#morebodycontent {
+	border-bottom:0px;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	position:relative;
+	padding-left: 20 px;
+	height: auto;
+	text-align: justify;
+	}
+
+#footer {
+	text-align: center;
+	position: relative;
+	width:100%;
+	}
+
+
+
+/*
+classes can appear in a webpage as many times as you want.
+*/
+.box {
+	float: left;
+	width:300px;
+	}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+
+
+
+
+
+
+.fun {
+	color: #339999;
+	font-family: times, georgia, serif;
+	}
+.titlebar {
+	font-family: times;
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: center;
+	}
+
+
+
+
+.menu-item {
+  width: 150px; /*Sets width of each menu column*/
+  /*margin: 5px;  Sets space horizontally between menu columns*/
+  position:relative;
+  /*float: left; Makes menu horizontal*/
+   
+}
+
+
+/*h4 styles*/
+.menu-item h4 {
+  color: #fff;
+  text-align: center;
+  background: #9FF781;
+  border-bottom:1px solid rgba(160,160,164,1);
+  border-top:1px solid rgba(160,160,164,1);
+  border-left:1px solid rgba(160,160,164,1);
+  border-right:1px solid rgba(160,160,164,1);
+  border-radius:3px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.menu-item h4 a {
+  color: black;
+  display:block;
+  width:150px;
+  height:50px;
+  text-decoration: none;
+}
+
+
+.menu-item h4:hover {
+ 	font-weight: bold;
+}
+
+
+/*ul Styles*/
+.menu-item ul {
+  background: #9FF781;
+  text-align:center;
+  list-style-type: none;
+  padding: 0px;
+  height: 0px; /*Collapses the menu*/
+  overflow: hidden;
+
+ /*Animation*/
+  -webkit-transition: height 1s ease; /* safari */
+     -moz-transition: height 1s ease; /* mozilla */
+       -o-transition: height 1s ease; /* opera */
+      -ms-transition: height 1s ease; /* microsoft*/
+          transition: height 1s ease; 
+}
+ 
+.menu-item ul a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width:150px;
+  height:50px;
+
+}
+ 
+/*li Styles*/
+.menu-item li {
+  border-bottom:1px solid rgba(160,160,164,1);
+  border-top:1px solid rgba(160,160,164,1);
+  border-left:1px solid rgba(160,160,164,1);
+  border-right:1px solid rgba(160,160,164,1);
+  border-radius:3px;
+  display:block;
+  width:150px;
+  height:50px;
+		
+}
+ 
+.menu-item li:hover {  
+  font-weight: bold;
+}
+
+.menu-item:hover1 ul {/*This is the base example for dropdown menu lists.*/
+  height: 156px;/*Height of menu.  52px*number of li*//*if height:auto; dropdown pops down*/
+}
+
+.menu-item:hover .castes {
+  height: 156px;/*Height of menu.  52px*number of li*/
+}
+
+.menu-item:hover .pest {
+  height: 312px;/*Height of menu.  52px*number of li*/
+}
+
+.menu-item:hover .ourwork {
+  height: 260px;/*Height of menu.  52px*number of li*/
+}
+
+.menu-item:hover .contact {
+  height: 52px;/*Height of menu.  52px*number of li*/
+}
+
+.slideshow {
+	width:300px;
+	height:300px;
+	border: none;
+	}
+

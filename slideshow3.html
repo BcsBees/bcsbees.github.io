@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+var i = 0;
+var path = new Array();
+var captions = new Array();
+// LIST OF SLIDES
+path[0] = "images/groupaug3112.jpg";
+path[1] = "images/personwithframe.jpg";
+path[2] = "images/workerbee.jpg";
+path[3] = "images/hive_3.jpg";
+path[4] = "images/Goldenrod.jpg";
+
+var caption = new Array();
+// LIST OF CAPT&#304;ONS
+
+caption[0] = "Original BeeKeeper Group";
+caption[1] = "Person with frame";
+caption[2] = "Worker bee";
+caption[3] = "One of our hives";
+caption[4] = "Goldenrod";
+
+function swapImage()
+{
+var el = document.getElementById("mydiv");
+el.innerHTML=caption[i];
+var img= document.getElementById("slide");
+img.src= path[i];
+   if(i < path.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",3000);
+
+}
+</script>
+
+
+<body onLoad="swapImage()">
+<img name="slide" id="slide" height=216 width=290 src="images/groupaug3112.jpg">
+<div style="width:290"><center> <div id ="mydiv"></div></center></div>
+

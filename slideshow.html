@@ -1,0 +1,51 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var slideimages = new Array() 
+slideimages[0] = new Image()
+slideimages[0].src = "images/groupaud3112.jpg"
+slideimages[1] = new Image()
+slideimages[1].src = "images/hive_3.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "images/personwithframe.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "images/people_1.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "images/hive_3.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "bottomboard.jpg"
+slideimages[6] = new Image()
+slideimages[6].src = "Chives.jpg"
+slideimages[7] = new Image()
+slideimages[7].src = "afbtest.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "beehive_1.jpg"
+
+</script>
+</head>
+<body>
+<img src="images/groupaug3112.jpg" id="slide" width="290" height="216" />
+
+<script type="text/javascript">
+
+var step=0
+
+function slideit(){
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages{step}.src
+ if (step<8)
+  step++
+ else
+  step=0
+
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+</body>
+</html>
+ 
